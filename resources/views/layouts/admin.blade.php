@@ -83,10 +83,10 @@
                     <a href="javascript:;" data-toggle="collapse" data-target="#user"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="user" class="collapse">
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="/{{route('users.index')}}">All Users</a>
                         </li>
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="{{route('users.create')}}">Create Users</a>
                         </li>
                     </ul>
                 </li>
