@@ -54,10 +54,22 @@
 
 
     <div class="form-group">
-        {!!  Form::submit('Edit', ['class' => 'btn btn-primary']) !!}
+        {!!  Form::submit('Edit', ['class' => 'btn btn-primary col-sm-6']) !!}
     </div>
 
     {!! Form::close() !!}
+
+
+       {!! Form::open(['method' => 'DELETE', 'action' => ['AdminUsersController@destroy', $user->id] ]) !!}
+
+       {{csrf_field()}}
+
+
+       <div class="form-group">
+           {!!  Form::submit('Delete', ['class' => 'btn btn-danger col-sm-6 ']) !!}
+       </div>
+
+       {!! Form::close() !!}
 
     @include('layouts.errors')
 

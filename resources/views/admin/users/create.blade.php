@@ -11,7 +11,6 @@
 
     {!! Form::open(['method' => 'POST', 'action' => 'AdminUsersController@store', 'files' => true]) !!}
 
-    {{csrf_field()}}
 
     <div class="form-group">
         {!! Form::label('name', 'Name') !!}
@@ -48,6 +47,7 @@
     <div class="form-group">
         {!!  Form::submit('Create', ['class' => 'btn btn-primary']) !!}
     </div>
+
 
     {!! Form::close() !!}
 
