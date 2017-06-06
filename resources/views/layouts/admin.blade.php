@@ -58,13 +58,9 @@
                     <li>
                         <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                    </li>
+
                     <li class="divider"></li>
+
                     <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -102,10 +98,10 @@
                     <a href="javascript:;" data-toggle="collapse" data-target="#post"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="post" class="collapse">
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="{{route('posts.index')}}">All Posts</a>
                         </li>
                         <li>
-                            <a href="#">Dropdown Item</a>
+                            <a href="{{route('posts.create')}}">Create Post</a>
                         </li>
                     </ul>
                 </li>
